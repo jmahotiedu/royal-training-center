@@ -13,15 +13,54 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
+                <svg width="50" height="50" viewBox="0 0 200 200" class="logo-svg">
+                    <!-- Outer green circle -->
+                    <circle cx="100" cy="100" r="95" fill="#4a6741"/>
+                    <!-- Inner cream circle -->
+                    <circle cx="100" cy="100" r="65" fill="#f5f1eb"/>
+                    
+                    <!-- Dumbbell design -->
+                    <!-- Center bar -->
+                    <rect x="70" y="96" width="60" height="8" rx="4" fill="#4a6741"/>
+                    <!-- Left weight -->
+                    <ellipse cx="72" cy="100" rx="12" ry="18" fill="#4a6741"/>
+                    <ellipse cx="72" cy="100" rx="8" ry="14" fill="#f5f1eb"/>
+                    <!-- Right weight -->
+                    <ellipse cx="128" cy="100" rx="12" ry="18" fill="#4a6741"/>
+                    <ellipse cx="128" cy="100" rx="8" ry="14" fill="#f5f1eb"/>
+                    
+                    <!-- Decorative leaves around dumbbell -->
+                    <!-- Top leaves -->
+                    <path d="M85 75 Q80 65 85 60 Q90 65 85 75" fill="#4a6741"/>
+                    <path d="M100 70 Q95 60 100 55 Q105 60 100 70" fill="#4a6741"/>
+                    <path d="M115 75 Q110 65 115 60 Q120 65 115 75" fill="#4a6741"/>
+                    
+                    <!-- Bottom leaves -->
+                    <path d="M85 125 Q80 135 85 140 Q90 135 85 125" fill="#4a6741"/>
+                    <path d="M100 130 Q95 140 100 145 Q105 140 100 130" fill="#4a6741"/>
+                    <path d="M115 125 Q110 135 115 140 Q120 135 115 125" fill="#4a6741"/>
+                    
+                    <!-- Curved text paths -->
+                    <defs>
+                        <path id="top-text" d="M 30,100 A 70,70 0 0,1 170,100"/>
+                        <path id="bottom-text" d="M 170,100 A 70,70 0 0,1 30,100"/>
+                    </defs>
+                    
+                    <!-- Text on curves -->
+                    <text font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#f5f1eb">
+                        <textPath href="#top-text" startOffset="0%">ROYAL TRAINING</textPath>
+                    </text>
+                    <text font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#f5f1eb">
+                        <textPath href="#bottom-text" startOffset="0%">CENTER</textPath>
+                    </text>
+                </svg>
                 <h2>Royal Training Center</h2>
             </div>
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#regimens">Regimens</a></li>
-                <li><a href="#nutrition">Nutrition</a></li>
-                <li><a href="#merchandise">Shop</a></li>
+                <li><a href="#about">Program Focus</a></li>
+                <li><a href="#regimens">Workout Regimens</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#book-session" class="cta-button">Book Session</a></li>
             </ul>
@@ -37,28 +76,63 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <div class="hero-text">
-                <h1>Transform Your Mind Through Movement</h1>
-                <p class="hero-subtitle">Working out is a means of mental peace, prosperity, stability, and healing. It's also a path to better health that can positively transform your life and relationships.</p>
+                <div class="hero-brand">
+                    <span class="krw-brand">KRW AT THE ROYAL TRAINING CENTER</span>
+                </div>
+                <h1>"YOUR BODY, YOUR KINGDOM."</h1>
+                <p class="hero-subtitle">Working out is a means of mental peace, prosperity. Let's get to work!</p>
                 <div class="hero-buttons">
                     <a href="#book-session" class="btn btn-primary">Start Your Journey</a>
                     <a href="#about" class="btn btn-secondary">Learn More</a>
                 </div>
             </div>
             <div class="hero-image">
-                <div class="hero-placeholder">
-                    <i class="fas fa-dumbbell"></i>
+                <div class="hero-logo">
+                    <svg width="300" height="300" viewBox="0 0 200 200" class="hero-logo-svg">
+                        <!-- Outer green circle -->
+                        <circle cx="100" cy="100" r="95" fill="#4a6741"/>
+                        <!-- Inner cream circle -->
+                        <circle cx="100" cy="100" r="65" fill="#f5f1eb"/>
+                        
+                        <!-- Dumbbell design -->
+                        <!-- Center bar -->
+                        <rect x="70" y="96" width="60" height="8" rx="4" fill="#4a6741"/>
+                        <!-- Left weight -->
+                        <ellipse cx="72" cy="100" rx="12" ry="18" fill="#4a6741"/>
+                        <ellipse cx="72" cy="100" rx="8" ry="14" fill="#f5f1eb"/>
+                        <!-- Right weight -->
+                        <ellipse cx="128" cy="100" rx="12" ry="18" fill="#4a6741"/>
+                        <ellipse cx="128" cy="100" rx="8" ry="14" fill="#f5f1eb"/>
+                        
+                        <!-- Decorative leaves around dumbbell -->
+                        <!-- Top leaves -->
+                        <path d="M85 75 Q80 65 85 60 Q90 65 85 75" fill="#4a6741"/>
+                        <path d="M100 70 Q95 60 100 55 Q105 60 100 70" fill="#4a6741"/>
+                        <path d="M115 75 Q110 65 115 60 Q120 65 115 75" fill="#4a6741"/>
+                        
+                        <!-- Bottom leaves -->
+                        <path d="M85 125 Q80 135 85 140 Q90 135 85 125" fill="#4a6741"/>
+                        <path d="M100 130 Q95 140 100 145 Q105 140 100 130" fill="#4a6741"/>
+                        <path d="M115 125 Q110 135 115 140 Q120 135 115 125" fill="#4a6741"/>
+                        
+                        <!-- Curved text paths -->
+                        <defs>
+                            <path id="hero-top-text" d="M 30,100 A 70,70 0 0,1 170,100"/>
+                            <path id="hero-bottom-text" d="M 170,100 A 70,70 0 0,1 30,100"/>
+                        </defs>
+                        
+                        <!-- Text on curves -->
+                        <text font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#f5f1eb">
+                            <textPath href="#hero-top-text" startOffset="0%">ROYAL TRAINING</textPath>
+                        </text>
+                        <text font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#f5f1eb">
+                            <textPath href="#hero-bottom-text" startOffset="0%">CENTER</textPath>
+                        </text>
+                    </svg>
                 </div>
             </div>
         </div>
         
-        <!-- Positive Fact of the Week -->
-        <div class="fact-of-week">
-            <div class="fact-container">
-                <h3><i class="fas fa-lightbulb"></i> Positive Fact of the Week</h3>
-                <p id="weekly-fact">Regular exercise increases the production of endorphins, your brain's natural "feel-good" chemicals, which can reduce stress and improve mood for up to 24 hours after your workout.</p>
-                <span class="fact-date">Updated every Friday</span>
-            </div>
-        </div>
     </section>
 
     <!-- About Section -->
@@ -70,71 +144,36 @@
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>Your Journey to Mental Wellness Starts Here</h3>
-                    <p>At Royal Training Center, we believe that fitness is more than just physical exercise—it's a powerful tool for mental healing, emotional stability, and personal growth. Our approach integrates mindful movement with evidence-based training to help you achieve not just physical strength, but mental clarity and emotional resilience.</p>
+                    <h3>PROGRAM FOCUS</h3>
+                    <p>At Royal Training Center, we focus on two key pillars that transform your body into your kingdom.</p>
                     
-                    <div class="wellness-benefits">
-                        <div class="benefit">
-                            <i class="fas fa-brain"></i>
-                            <h4>Mental Peace</h4>
-                            <p>Find calm and clarity through mindful movement</p>
+                    <div class="program-pillars">
+                        <div class="pillar mobility">
+                            <h4>Mobility</h4>
+                            <ul>
+                                <li>Improve flexibility, energy transfer, and power through ankle, hip and foot strength.</li>
+                                <li>Enhance explosive movements and center-of-gravity stability to boost overall athletic performance.</li>
+                            </ul>
                         </div>
-                        <div class="benefit">
-                            <i class="fas fa-chart-line"></i>
-                            <h4>Prosperity</h4>
-                            <p>Build confidence that translates to all areas of life</p>
+                        <div class="pillar mentality">
+                            <h4>Mentality</h4>
+                            <ul>
+                                <li>Build confidence through consistent effort and visible results.</li>
+                                <li>Understand personal growth, manage ego and embrace your role in a bigger purpose.</li>
+                                <li>Develop a sense of purpose beyond yourself.</li>
+                            </ul>
                         </div>
-                        <div class="benefit">
-                            <i class="fas fa-heart"></i>
-                            <h4>Healing</h4>
-                            <p>Use exercise as therapy for body and mind</p>
-                        </div>
-                        <div class="benefit">
-                            <i class="fas fa-users"></i>
-                            <h4>Better Relationships</h4>
-                            <p>Improved health positively impacts all your connections</p>
-                        </div>
+                    </div>
+                    
+                    <div class="program-motto">
+                        <h3>"YOUR KINGDOM, YOUR WAY."</h3>
+                        <p><strong>TAKE CONTROL TODAY!</strong></p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Services</h2>
-                <p>Comprehensive wellness solutions tailored to your needs</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <i class="fas fa-calendar-check"></i>
-                    <h3>Personal Training Sessions</h3>
-                    <p>One-on-one sessions focused on your mental and physical wellness goals</p>
-                    <a href="#book-session" class="btn btn-outline">Book Session</a>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-play-circle"></i>
-                    <h3>Online Regimens</h3>
-                    <p>Structured workout programs with video tutorials you can follow at home</p>
-                    <a href="#regimens" class="btn btn-outline">View Regimens</a>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-apple-alt"></i>
-                    <h3>Nutrition Guidance</h3>
-                    <p>Dietary suggestions and wellness tips to support your fitness journey</p>
-                    <a href="#nutrition" class="btn btn-outline">Get Guidance</a>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-tshirt"></i>
-                    <h3>Wellness Merchandise</h3>
-                    <p>Quality gear and apparel to support your training lifestyle</p>
-                    <a href="#merchandise" class="btn btn-outline">Shop Now</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Book Session Section -->
     <section id="book-session" class="booking">
@@ -164,10 +203,11 @@
                             <label for="sessionType">Session Type</label>
                             <select id="sessionType" name="sessionType" required>
                                 <option value="">Select a session type</option>
-                                <option value="personal-training">Personal Training - $75</option>
-                                <option value="wellness-consultation">Wellness Consultation - $50</option>
-                                <option value="group-session">Small Group Session - $40</option>
-                                <option value="virtual-session">Virtual Session - $60</option>
+                                <option value="single-session">Single Session - $30</option>
+                                <option value="monthly-3-sessions">Monthly (3 Sessions) - $100 + $25 deposit</option>
+                                <option value="monthly-4-sessions">Monthly (4 Sessions) - $150 + $25 deposit</option>
+                                <option value="monthly-5-sessions">Monthly (5 Sessions) - $210 + $25 deposit</option>
+                                <option value="digital-regimen">Digital Regimen - $25</option>
                             </select>
                         </div>
                     </div>
@@ -211,190 +251,62 @@
     <section id="regimens" class="regimens">
         <div class="container">
             <div class="section-header">
-                <h2>Online Training Regimens</h2>
-                <p>Structured programs with video tutorials for mental wellness through movement</p>
+                <div class="regimen-brand">
+                    <i class="fas fa-dumbbell regimen-icon"></i>
+                </div>
+                <h2>KINGS ROYAL WORKOUTS</h2>
+                <h3>WORKOUT REGIMENTS</h3>
+                <p class="regimen-tagline">SINCE 2021</p>
+                <p class="regimen-subtitle">START THE JOURNEY OF YOUR HEALTHY TRANSFORMATION</p>
             </div>
             <div class="regimens-grid">
-                <div class="regimen-card">
-                    <div class="regimen-image">
-                        <i class="fas fa-leaf"></i>
+                <div class="regimen-card basic">
+                    <div class="regimen-header">
+                        <h3>Single Workout Regiments</h3>
+                        <div class="regimen-price">$10</div>
                     </div>
-                    <h3>Mindful Strength</h3>
-                    <p>8-week program combining strength training with mindfulness practices</p>
                     <div class="regimen-features">
-                        <span><i class="fas fa-video"></i> 24 Video Tutorials</span>
-                        <span><i class="fas fa-clock"></i> 45 min sessions</span>
-                        <span><i class="fas fa-users"></i> All Levels</span>
+                        <p>Perfect for trying out our workout style</p>
+                        <p>Single session access</p>
+                        <p>Basic movement guidance</p>
                     </div>
-                    <div class="regimen-price">$89</div>
-                    <button class="btn btn-primary" onclick="purchaseRegimen('mindful-strength')">Purchase Program</button>
+                    <button class="btn btn-primary" onclick="purchaseRegimen('single-workout')">Get Started</button>
                 </div>
                 
-                <div class="regimen-card">
-                    <div class="regimen-image">
-                        <i class="fas fa-mountain"></i>
+                <div class="regimen-card standard">
+                    <div class="regimen-header">
+                        <h3>Few Workout Regiments</h3>
+                        <div class="regimen-price">$20</div>
                     </div>
-                    <h3>Mental Resilience</h3>
-                    <p>12-week program focused on building mental toughness through physical challenges</p>
                     <div class="regimen-features">
-                        <span><i class="fas fa-video"></i> 36 Video Tutorials</span>
-                        <span><i class="fas fa-clock"></i> 60 min sessions</span>
-                        <span><i class="fas fa-users"></i> Intermediate+</span>
+                        <p>Multiple workout sessions</p>
+                        <p>Variety of exercises</p>
+                        <p>Progressive difficulty</p>
                     </div>
-                    <div class="regimen-price">$129</div>
-                    <button class="btn btn-primary" onclick="purchaseRegimen('mental-resilience')">Purchase Program</button>
+                    <button class="btn btn-primary" onclick="purchaseRegimen('few-workouts')">Purchase</button>
                 </div>
                 
-                <div class="regimen-card">
-                    <div class="regimen-image">
-                        <i class="fas fa-sun"></i>
+                <div class="regimen-card premium">
+                    <div class="regimen-header">
+                        <h3>A Week Worth of Regiments</h3>
+                        <div class="regimen-price">$25</div>
                     </div>
-                    <h3>Morning Wellness</h3>
-                    <p>4-week morning routine program to start your day with mental clarity</p>
                     <div class="regimen-features">
-                        <span><i class="fas fa-video"></i> 12 Video Tutorials</span>
-                        <span><i class="fas fa-clock"></i> 30 min sessions</span>
-                        <span><i class="fas fa-users"></i> All Levels</span>
+                        <p>Complete weekly program</p>
+                        <p>Full workout schedule</p>
+                        <p>Phone calls available for movement explanation</p>
                     </div>
-                    <div class="regimen-price">$49</div>
-                    <button class="btn btn-primary" onclick="purchaseRegimen('morning-wellness')">Purchase Program</button>
+                    <button class="btn btn-primary" onclick="purchaseRegimen('weekly-regiments')">Best Value</button>
                 </div>
-                
-                <div class="regimen-card">
-                    <div class="regimen-image">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <h3>Stress Relief Flow</h3>
-                    <p>6-week program combining cardio and yoga for stress management</p>
-                    <div class="regimen-features">
-                        <span><i class="fas fa-video"></i> 18 Video Tutorials</span>
-                        <span><i class="fas fa-clock"></i> 40 min sessions</span>
-                        <span><i class="fas fa-users"></i> All Levels</span>
-                    </div>
-                    <div class="regimen-price">$69</div>
-                    <button class="btn btn-primary" onclick="purchaseRegimen('stress-relief')">Purchase Program</button>
-                </div>
+            </div>
+            <div class="regimen-footer">
+                <p><strong>DISCOVER THE NEW BEST OF YOU</strong></p>
+                <p class="social-handle">@kingsroyalworkouts</p>
             </div>
         </div>
     </section>
 
-    <!-- Nutrition Section -->
-    <section id="nutrition" class="nutrition">
-        <div class="container">
-            <div class="section-header">
-                <h2>Nutrition Guidance</h2>
-                <p>Dietary suggestions to support your mental wellness journey</p>
-            </div>
-            <div class="nutrition-content">
-                <div class="nutrition-categories">
-                    <div class="category-card">
-                        <i class="fas fa-brain"></i>
-                        <h3>Brain-Boosting Foods</h3>
-                        <ul>
-                            <li>Omega-3 rich fish (salmon, mackerel)</li>
-                            <li>Leafy greens (spinach, kale)</li>
-                            <li>Berries (blueberries, strawberries)</li>
-                            <li>Nuts and seeds (walnuts, chia seeds)</li>
-                            <li>Dark chocolate (70%+ cacao)</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="category-card">
-                        <i class="fas fa-battery-full"></i>
-                        <h3>Energy Sustainers</h3>
-                        <ul>
-                            <li>Complex carbs (quinoa, sweet potatoes)</li>
-                            <li>Lean proteins (chicken, tofu, legumes)</li>
-                            <li>Healthy fats (avocado, olive oil)</li>
-                            <li>Greek yogurt with probiotics</li>
-                            <li>Green tea for steady energy</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="category-card">
-                        <i class="fas fa-leaf"></i>
-                        <h3>Stress-Fighting Foods</h3>
-                        <ul>
-                            <li>Magnesium-rich foods (almonds, spinach)</li>
-                            <li>Vitamin C sources (citrus, bell peppers)</li>
-                            <li>Adaptogenic herbs (ashwagandha, turmeric)</li>
-                            <li>Herbal teas (chamomile, passionflower)</li>
-                            <li>Fermented foods (kimchi, kefir)</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="nutrition-tips">
-                    <h3>Weekly Nutrition Tips</h3>
-                    <div class="tips-grid">
-                        <div class="tip-card">
-                            <h4>Hydration for Mental Clarity</h4>
-                            <p>Aim for 8-10 glasses of water daily. Even mild dehydration can affect mood and cognitive function.</p>
-                        </div>
-                        <div class="tip-card">
-                            <h4>Meal Timing Matters</h4>
-                            <p>Eat balanced meals every 3-4 hours to maintain stable blood sugar and energy levels.</p>
-                        </div>
-                        <div class="tip-card">
-                            <h4>Mindful Eating</h4>
-                            <p>Practice eating without distractions to improve digestion and satisfaction with meals.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Merchandise Section -->
-    <section id="merchandise" class="merchandise">
-        <div class="container">
-            <div class="section-header">
-                <h2>Royal Training Merchandise</h2>
-                <p>Quality gear to support your wellness journey</p>
-            </div>
-            <div class="merchandise-grid">
-                <div class="product-card">
-                    <div class="product-image">
-                        <i class="fas fa-tshirt"></i>
-                    </div>
-                    <h3>Royal Training T-Shirt</h3>
-                    <p>Premium cotton blend with motivational wellness quotes</p>
-                    <div class="product-price">$29</div>
-                    <button class="btn btn-primary" onclick="addToCart('royal-tshirt')">Add to Cart</button>
-                </div>
-                
-                <div class="product-card">
-                    <div class="product-image">
-                        <i class="fas fa-hat-cowboy"></i>
-                    </div>
-                    <h3>Wellness Cap</h3>
-                    <p>Adjustable cap with Royal Training Center logo</p>
-                    <div class="product-price">$24</div>
-                    <button class="btn btn-primary" onclick="addToCart('wellness-cap')">Add to Cart</button>
-                </div>
-                
-                <div class="product-card">
-                    <div class="product-image">
-                        <i class="fas fa-water"></i>
-                    </div>
-                    <h3>Mindful Hydration Bottle</h3>
-                    <p>32oz stainless steel bottle with time markers</p>
-                    <div class="product-price">$34</div>
-                    <button class="btn btn-primary" onclick="addToCart('hydration-bottle')">Add to Cart</button>
-                </div>
-                
-                <div class="product-card">
-                    <div class="product-image">
-                        <i class="fas fa-dumbbell"></i>
-                    </div>
-                    <h3>Resistance Band Set</h3>
-                    <p>Complete set of resistance bands with workout guide</p>
-                    <div class="product-price">$39</div>
-                    <button class="btn btn-primary" onclick="addToCart('resistance-bands')">Add to Cart</button>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Social Media Section -->
     <section id="social" class="social">
@@ -410,20 +322,25 @@
                         <span>@royaltrainingcenter</span>
                         <p>Daily workout tips and wellness inspiration</p>
                     </a>
-                    <a href="#" class="social-link tiktok" target="_blank">
-                        <i class="fab fa-tiktok"></i>
-                        <span>@royaltrainingcenter</span>
-                        <p>Quick fitness tips and motivational content</p>
+                    <a href="#" class="social-link instagram" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                        <span>@kingsroyalworkouts</span>
+                        <p>Kings Royal Workouts - Workout regiments since 2021</p>
                     </a>
                 </div>
                 
-                <div class="monthly-specials">
-                    <h3><i class="fas fa-star"></i> This Month's Special</h3>
-                    <div class="special-offer">
-                        <h4>New Client Package</h4>
-                        <p>Get your first personal training session + wellness consultation for just <strong>$99</strong> (Regular $125)</p>
-                        <p class="special-expires">Valid through September 2025</p>
-                        <a href="#book-session" class="btn btn-primary">Claim Special</a>
+                <div class="rates-info">
+                    <h3><i class="fas fa-dumbbell"></i> RATES</h3>
+                    <div class="rates-list">
+                        <p><strong>Single Sessions</strong> - $30</p>
+                        <h4>Monthly Rates</h4>
+                        <p>(Includes $25 non-refundable deposit to hold your spot)</p>
+                        <ul>
+                            <li>3 Sessions weekly - $100</li>
+                            <li>4 Sessions weekly - $150</li>
+                            <li>5 Sessions weekly - $210</li>
+                        </ul>
+                        <p><strong>Digital Regiments</strong> - $25</p>
                     </div>
                 </div>
             </div>
@@ -485,28 +402,16 @@
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#regimens">Regimens</a></li>
-                        <li><a href="#nutrition">Nutrition</a></li>
-                        <li><a href="#merchandise">Shop</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
+                        <li><a href="#about">Program Focus</a></li>
+                        <li><a href="#regimens">Workout Regimens</a></li>
                         <li><a href="#book-session">Book Session</a></li>
-                        <li><a href="#regimens">Online Programs</a></li>
-                        <li><a href="#nutrition">Nutrition Guidance</a></li>
-                        <li><a href="#merchandise">Merchandise</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Follow Us</h4>
                     <div class="social-icons">
                         <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
                     </div>
                 </div>
             </div>
@@ -516,47 +421,6 @@
         </div>
     </footer>
 
-    <!-- Cart Modal -->
-    <div id="cartModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Shopping Cart</h2>
-            <div id="cartItems"></div>
-            <div class="cart-total">
-                <strong>Total: $<span id="cartTotal">0</span></strong>
-            </div>
-            <button class="btn btn-primary btn-full" onclick="checkout()">Proceed to Checkout</button>
-        </div>
-    </div>
-
-    <!-- Payment Modal -->
-    <div id="paymentModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Payment</h2>
-            <form id="paymentForm">
-                <div class="form-group">
-                    <label>Card Number</label>
-                    <input type="text" placeholder="1234 5678 9012 3456" required>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label>Expiry</label>
-                        <input type="text" placeholder="MM/YY" required>
-                    </div>
-                    <div class="form-group">
-                        <label>CVV</label>
-                        <input type="text" placeholder="123" required>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label>Name on Card</label>
-                    <input type="text" placeholder="John Doe" required>
-                </div>
-                <button type="submit" class="btn btn-primary btn-full">Complete Payment</button>
-            </form>
-        </div>
-    </div>
 
     <script src="script.js"></script>
 </body>
